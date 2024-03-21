@@ -1,4 +1,7 @@
 import React from 'react';
+import '../app/globals.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -10,9 +13,9 @@ const Home = () => {
           </div>
           <nav>
             <u1>
-              <li className="current"><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
+              <li className="current"><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/services">Services</Link></li>
             </u1>
           </nav>
         </div>
@@ -29,7 +32,7 @@ const Home = () => {
         <div className="container">
           <h1>Subscribe to our Newsletter</h1>
           <form>
-            <input type="email" placeholder="Enter your Email..." />
+            <input type="email"autoComplete="off" placeholder="Enter your Email..." />
             <button type="submit" class="button_1">Subscribe</button>
           </form>
         </div>
@@ -38,19 +41,19 @@ const Home = () => {
       <section id="boxes">
         <div className="container">
           <div className="box">
-            <img src="./blue_team.png" alt="Defensive Testing" />  {/* Added alt text for accessibility */}
+            <Image src="/img/blue_team.png" alt="Defensive Testing" width={400} height={100} />  {/* Added alt text for accessibility */}
             <h3>Defensive Testing</h3>
             <p>Nam in dignissim augue, at vestibulum lacus. Donec scelerisque nec risus quis lobortis.</p>
           </div>
 
           <div className="box">
-            <img src="./red_team.png" alt="Offensive Testing" />  {/* Added alt text for accessibility */}
+            <Image src="/img/red_team.png" alt="Offensive Testing" width={400} height={100}/>  {/* Added alt text for accessibility */}
             <h3>Offensive Testing</h3>
             <p>Nam in dignissim augue, at vestibulum lacus. Donec scelerisque nec risus quis lobortis.</p>
           </div>
 
           <div className="box">
-            <img src="./cyber.png" alt="Professional Services" />  {/* Added alt text for accessibility */}
+            <Image src="/img/cyber.png" alt="Professional Services" width={400} height={100}/>  {/* Added alt text for accessibility */}
             <h3>Professional</h3>
             <p>Nam in dignissim augue, at vestibulum lacus. Donec scelerisque nec risus quis lobortis.</p>
           </div>
