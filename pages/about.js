@@ -13,17 +13,17 @@ const About = () => {
             <u1>
             <li>
               <Link href="/">
-                <a>Home</a>
+                <Link>Home</Link>
               </Link>
             </li>
             <li className="current">
                 <Link href="/about">
-                  <a>About</a>
+                  <Link>About</Link>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a>Services</a>
+                  <Link>Services</Link>
                 </Link>
               </li>
             </u1>

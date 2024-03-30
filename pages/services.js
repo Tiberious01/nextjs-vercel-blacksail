@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 
 const Services = () => {
   return (
@@ -10,9 +12,21 @@ const Services = () => {
           </div>
           <nav>
             <u1>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li className="current"><a href="/services">Services</a></li>
+            <li>
+              <Link href="/">
+                <Link>Home</Link>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <Link>About</Link>
+              </Link>
+            </li>
+            <li className="current">
+              <Link href="/services">
+                <Link>Services</Link>
+              </Link>
+            </li>
             </u1>
           </nav>
         </div>
