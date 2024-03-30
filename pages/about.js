@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -10,9 +11,21 @@ const About = () => {
           </div>
           <nav>
             <u1>
-              <li><a href="/">Home</a></li>
-              <li className="current"><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className="current">
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/services">
+                  <a>Services</a>
+                </Link>
+              </li>
             </u1>
           </nav>
         </div>
