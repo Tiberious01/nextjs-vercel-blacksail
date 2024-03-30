@@ -11,21 +11,9 @@ const About = () => {
           </div>
           <nav>
             <u1>
-            <li>
-              <Link href="/">
-                <Link>Home</Link>
-              </Link>
-            </li>
-            <li className="current">
-                <Link href="/about">
-                  <Link>About</Link>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services">
-                  <Link>Services</Link>
-                </Link>
-              </li>
+              <li><Link href="/">Home</Link></li>
+              <li className="current"><Link href="/about">About</Link></li>
+              <li><Link href="/services">Services</Link></li>
             </u1>
           </nav>
         </div>
